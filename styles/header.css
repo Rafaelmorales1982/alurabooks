@@ -1,0 +1,69 @@
+/*4°*/
+.cabecalho-menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    display: inline-block;/* alinhar elementos em linha sem perder a capacidade de definir suas dimensões. */
+    background-repeat: no-repeat;/*não deixa repetir a imagem do menu*/
+    background-position: center;/*centralizando a imagem*/
+
+}
+
+/*6° */
+.cabecalho {
+    background-color: var(--branco);
+    display: flex;/*deixar os itens lada a lado*/
+    justify-content: space-between;/*espaçamento entre os itens */
+    align-items: center;/*espaçamento no centro verticalmente*/
+    
+    /*colocando no final*/
+    position: relative;/*coloca na class pai e coloca position absolute no filho para poder posicionar */
+
+}   
+
+/*7° */
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container-imagem {
+    padding: 1em;/*igual 16px*/
+}
+
+/*colocar dispay none e esconde a lista*/
+.lista-menu {
+    display: none;
+    /*utilizando position absolute para poder fazer a lista para baixo*/
+    position: absolute;
+    top: 100%;
+    width: 60vw;/*aumentando largura do menu*/
+}
+
+/*aparece a lista quando for clicado*/
+.container-botao:checked~.lista-menu {
+    display: block;/*deixa os elementos em bloco */
+}
+
+
+/*colocando cor de fundo e dando espaçamento interno*/
+.lista-menu-titulo, .lista-menu-item {
+    padding: 1em; /*16px*/
+    background-color: var(--branco);
+}
+
+/*colocando cor na categoria*/
+.lista-menu-titulo {
+    color: var(--laranja);
+}
+
+/*colocando cor link*/
+.lista-menu-link {
+    color: var(--preto);
+    text-transform: uppercase;
+}
+
+/*esconder checkbox*/ 
+.container-botao {
+    display: none;
+}

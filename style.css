@@ -1,0 +1,27 @@
+/*importando css para funcionar nesse principal*/
+/*5°*/
+@import url("./styles/header.css");
+
+/*criando variávei no css para poder utilizar em outros lugares*/
+/*1° */
+:root {
+    --cor-de-fundo: #ebecee;
+    --branco: #ffffff;
+    --laranja: #eb9b00;
+    --preto: #222222;
+}
+
+
+/*colocando cor de fundo na página*/
+/*2° */
+body {
+    background-color: var(--cor-de-fundo);
+}
+
+
+/*3° Resentando o site*/
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+}
